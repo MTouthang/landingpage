@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to left, #537895, #09203F);
+    color: #fff;
+}
+
+header {
+    margin: 0 5%;
+    border: 2px solid;
+    
+}
+
+/* puthing the nav items in a single row */
+nav {
+    display: inline-block;
+    margin: auto;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.logo {
+    width: fit-content;
+    display: inline-block;
+}
+.nav-btn {
+    display: inline-block;
+   
+}
+

@@ -1,32 +1,117 @@
+/* google fonts import -  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+/* Poppins fonts from google */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
 body {
     margin: 0;
     padding: 0;
     background:linear-gradient(to left, #537895, #09203F);
     color: #fff;
+    height: 100vh;
+   
 }
 
+/* nav bar section */
 header {
     margin: 0 5%;
-    border: 2px solid;
+    position: relative; /* relative position to position nav items to the desire position*/
     
 }
 
-/* puthing the nav items in a single row */
 nav {
     display: inline-block;
-    margin: auto;
+    position: absolute;
+    left: 15%;
+    top: 10%;
+    
+}
+.nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0%;
+    top: 35%;
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+nav ul li span {
+    position: absolute;
+    padding-top: 5px;
+
 }
 .logo {
     width: fit-content;
     display: inline-block;
 }
-.nav-btn {
-    display: inline-block;
-   
+
+/* nav buttons */
+.nav-btn-login {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+}
+.nav-btn-register {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
+
+/* main section */
+.hero-section {
+    position: relative;
+    margin-top: 5%;
+}
+
+
+/* hero section left styling */
+.hero-section-left {
+    width: 45%;
+    position: absolute;
+    margin-left: 5%;
+    height: 70vh;
+}
+/* call to action button in the hero-section */
+.cta-btn {
+    background-color: #F57359;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 5px 15px;
+    border-radius: 4px;
+} 
+.h-s-l-one > h1 {
+    font-size: 50px;
+}
+
+.h-s-l-two > img {
+    margin-right: 10px;
+}
+
+.h-s-l-two {
+    position: absolute;
+    bottom: 0;
+}
+
+/* hero section right styling */
+.hero-section-right {
+float: right;
+
+} 
+
+/* hero section image size */
+.hero-section-right > img {
+    width:36vw;
+}
